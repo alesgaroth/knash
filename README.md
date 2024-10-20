@@ -6,7 +6,7 @@ computers in our home network, and I didn't really get a chance to try it out.
 
 2024 October 19 (over 26 years later) I finally recognized that the idea might work on a kubernetes cluster, or cloud cluster.
 
-The gernal idea is that if I wrote
+The general idea is that if I wrote
 ```
 ./long_running_process &
 ```

@@ -30,3 +30,8 @@ A more interesting version would be:
 ```
 which cause 4 copies of second_long_running_process to be run (on 1 to 4 different machines)
 where the copies take turns reading from the queue.  This implies that each line of the output can be considered as a separate record.
+
+To get terminal output we have an append only queue for the terminal.  curses applications would have to be run locally, but other apps can be hooked up via queues. 
+
+To edit a file `vim filename` would download the file and open vim with it.  writing it back sends it back over the network.  (or a diff if that makes more sense for network bandwidth)
+
